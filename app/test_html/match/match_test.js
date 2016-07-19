@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
     },
     player: {
         flex: 1,
-        width: 10,
         flexDirection: 'row',
         overflow: 'hidden',
         alignItems: 'center'
@@ -76,7 +75,6 @@ const styles = StyleSheet.create({
     hero: {
         flex: 1,
         flexDirection: 'row',
-        width: 10,
         overflow: 'hidden',
         marginLeft: 5,
         alignItems: 'center',
@@ -87,7 +85,6 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'flex-start',
         alignItems: 'flex-end',
-        width: 10,
         overflow: 'hidden',
         paddingTop: 5,
         paddingBottom: 5,
@@ -109,12 +106,10 @@ const styles = StyleSheet.create({
     },
 
     detailLeft: {
-        width:1,
         flex:1,
         padding:5,
     },
     detailRight: {
-        width:1,
         flex:1,
         padding:5,
         borderLeftWidth:1,
@@ -122,7 +117,7 @@ const styles = StyleSheet.create({
         borderLeftStyle:'solid',
     },
     detailText: {
-        fontSize:10,
+        fontSize:11,
         fontWeight:300,
     }
 
@@ -135,13 +130,3 @@ ReactDOM.render(
     document.getElementById('container')
 );
 
-
-// set span/text height
-
-$("span").each(function() {
-    let thiz = $(this)
-    console.log(thiz.attr("data-numberOfLines"))
-    if (!thiz.attr("data-numberOfLines")) return
-    console.log("hi")
-    thiz.height(13 * thiz.attr("data-numberOfLines"))
-})

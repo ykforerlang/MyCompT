@@ -12,19 +12,32 @@
     <link href="../css/common.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<div class="change">
+    <select>
+        <option data-wight="320px" data-height="568px">iphone5</option>
+        <option data-wight="375px" data-height="667px">iphone6</option>
+        <option data-wight="414px" data-height="736px">iphone6plus</option>
+        <option data-wight="768px" data-height="1024px">iPad</option>
+        <option data-wight="360px" data-height="640px">Galaxy S5</option>
+        <option data-wight="411px" data-height="731px">Nexus 5X</option>
+        <option data-wight="435px" data-height="773px">Nexus 6P</option>
+    </select>
+</div>
 <div id="container" class="iphone5">
 
 </div>
 <script type="text/babel" src="match_test.js" charset="utf-8"></script>
 <script>
     $(function() {
-        console.log($("#heroName").css("font-size"))
-        console.log($("#heroName"))
+        $("#container").css("width",  "320px")
+        $("#container").css("height",  "568px")
 
-        window.changePhone = function(phone) {
-            $("#container").removeAttr("class")
-            $("#container").addClass(phone)
-        }
+        $(".change  option").click(function() {
+            var $this = $(this)
+            console.log($this.attr('data-wight'))
+            $("#container").css("width", $this.attr('data-wight'))
+            $("#container").css('height', $this.attr('data-height'))
+        })
     })
 </script>
 </body>
