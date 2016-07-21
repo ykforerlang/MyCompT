@@ -39,8 +39,77 @@ class LeagueAll extends React.Component {
 
                         <Text style={styles.downTag}>V</Text>
                     </View>
-                    <View style={styles.seriesDetail}>
-
+                    <View style={{backgroundColor: '#f0f0f0', marginLeft:30, padding:5, borderTopWidth:1, borderTopColor:'grey', borderTopStyle:'solid'}}>
+                        <View style={{flexDirection:'row'}}>
+                            <Text style={{fontSize:12, flex:1}}>比赛ID: 20130132303</Text>
+                            <Text style={{fontSize:12, flex:1}}>时长: 24分22</Text>
+                        </View>
+                        <View style={{paddingTop:5}}>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={{color:'red', fontSize:12, width:80}}>LGD:</Text>
+                                <Image source={require("../../image/hero/10.png")}/>
+                                <Image source={require("../../image/hero/11.png")}/>
+                                <Image source={require("../../image/hero/12.png")}/>
+                                <Image source={require("../../image/hero/13.png")}/>
+                                <Image source={require("../../image/hero/14.png")}/>
+                            </View>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={{color:'blue', fontSize:12, width:80}}>EHOME:</Text>
+                                <Image source={require("../../image/hero/15.png")}/>
+                                <Image source={require("../../image/hero/16.png")}/>
+                                <Image source={require("../../image/hero/17.png")}/>
+                                <Image source={require("../../image/hero/18.png")}/>
+                                <Image source={require("../../image/hero/19.png")}/>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={{backgroundColor: '#f0f0f0', marginLeft:30, padding:5, borderTopWidth:1, borderTopColor:'grey', borderTopStyle:'solid'}}>
+                        <View style={{flexDirection:'row'}}>
+                            <Text style={{fontSize:12, flex:1}}>比赛ID: 20130132303</Text>
+                            <Text style={{fontSize:12, flex:1}}>时长: 24分22</Text>
+                        </View>
+                        <View style={{paddingTop:5}}>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={{color:'red', fontSize:12, width:80}}>LGD:</Text>
+                                <Image source={require("../../image/hero/10.png")}/>
+                                <Image source={require("../../image/hero/11.png")}/>
+                                <Image source={require("../../image/hero/12.png")}/>
+                                <Image source={require("../../image/hero/13.png")}/>
+                                <Image source={require("../../image/hero/14.png")}/>
+                            </View>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={{color:'blue', fontSize:12, width:80}}>EHOME:</Text>
+                                <Image source={require("../../image/hero/15.png")}/>
+                                <Image source={require("../../image/hero/16.png")}/>
+                                <Image source={require("../../image/hero/17.png")}/>
+                                <Image source={require("../../image/hero/18.png")}/>
+                                <Image source={require("../../image/hero/19.png")}/>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={{backgroundColor: '#f0f0f0', marginLeft:30, padding:5, borderTopWidth:1, borderTopColor:'grey', borderTopStyle:'solid'}}>
+                        <View style={{flexDirection:'row'}}>
+                            <Text style={{fontSize:12, flex:1}}>比赛ID: 20130132303</Text>
+                            <Text style={{fontSize:12, flex:1}}>时长: 24分22</Text>
+                        </View>
+                        <View style={{paddingTop:5}}>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={{color:'red', fontSize:12, width:80}}>LGD:</Text>
+                                <Image source={require("../../image/hero/10.png")}/>
+                                <Image source={require("../../image/hero/11.png")}/>
+                                <Image source={require("../../image/hero/12.png")}/>
+                                <Image source={require("../../image/hero/13.png")}/>
+                                <Image source={require("../../image/hero/14.png")}/>
+                            </View>
+                            <View style={{flexDirection:'row'}}>
+                                <Text style={{color:'blue', fontSize:12, width:80}}>EHOME:</Text>
+                                <Image source={require("../../image/hero/15.png")}/>
+                                <Image source={require("../../image/hero/16.png")}/>
+                                <Image source={require("../../image/hero/17.png")}/>
+                                <Image source={require("../../image/hero/18.png")}/>
+                                <Image source={require("../../image/hero/19.png")}/>
+                            </View>
+                        </View>
                     </View>
                 </View>
             </View>

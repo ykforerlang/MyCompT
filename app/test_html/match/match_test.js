@@ -30,6 +30,98 @@ class Match extends React.Component {
                         </View>
                     </View>
                 </View>
+                <View style={styles.brief}>
+                    <View style={styles.player}>
+                        <Image source={require("../../image/player/514364.jpg")}/>
+                        <Text style={styles.briefText}>fdsfdsdf</Text>
+                    </View>
+                    <View style={styles.hero}>
+                        <Image source={require("../../image/hero/2.png")}/>
+                        <Text  style={styles.briefText}>天穹</Text>
+                    </View>
+                    <View style={styles.items}>
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/1.png")}/>
+                            <Image source={require("../../image/item/2.png")}/>
+                            <Image source={require("../../image/item/3.png")}/>
+                        </View>
+
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/4.png")}/>
+                            <Image source={require("../../image/item/5.png")}/>
+                            <Image source={require("../../image/item/6.png")}/>
+                        </View>
+                    </View>
+                </View>
+                <View style={styles.brief}>
+                    <View style={styles.player}>
+                        <Image source={require("../../image/player/514364.jpg")}/>
+                        <Text style={styles.briefText}>天望者</Text>
+                    </View>
+                    <View style={styles.hero}>
+                        <Image source={require("../../image/hero/4.png")}/>
+                        <Text  style={styles.briefText}>火箭</Text>
+                    </View>
+                    <View style={styles.items}>
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/1.png")}/>
+                            <Image source={require("../../image/item/2.png")}/>
+                            <Image source={require("../../image/item/3.png")}/>
+                        </View>
+
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/4.png")}/>
+                            <Image source={require("../../image/item/5.png")}/>
+                            <Image source={require("../../image/item/6.png")}/>
+                        </View>
+                    </View>
+                </View>
+                <View style={styles.brief}>
+                    <View style={styles.player}>
+                        <Image source={require("../../image/player/514364.jpg")}/>
+                        <Text style={styles.briefText}>天穹守望者</Text>
+                    </View>
+                    <View style={styles.hero}>
+                        <Image source={require("../../image/hero/1.png")}/>
+                        <Text  style={styles.briefText}>天穹守望者</Text>
+                    </View>
+                    <View style={styles.items}>
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/1.png")}/>
+                            <Image source={require("../../image/item/2.png")}/>
+                            <Image source={require("../../image/item/3.png")}/>
+                        </View>
+
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/4.png")}/>
+                            <Image source={require("../../image/item/5.png")}/>
+                            <Image source={require("../../image/item/6.png")}/>
+                        </View>
+                    </View>
+                </View>
+                <View style={styles.brief}>
+                    <View style={styles.player}>
+                        <Image source={require("../../image/player/514364.jpg")}/>
+                        <Text style={styles.briefText}>天穹守望者</Text>
+                    </View>
+                    <View style={styles.hero}>
+                        <Image source={require("../../image/hero/1.png")}/>
+                        <Text  style={styles.briefText}>天穹守望者</Text>
+                    </View>
+                    <View style={styles.items}>
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/1.png")}/>
+                            <Image source={require("../../image/item/2.png")}/>
+                            <Image source={require("../../image/item/3.png")}/>
+                        </View>
+
+                        <View style={styles.itemsLine}>
+                            <Image source={require("../../image/item/4.png")}/>
+                            <Image source={require("../../image/item/5.png")}/>
+                            <Image source={require("../../image/item/6.png")}/>
+                        </View>
+                    </View>
+                </View>
                 <View style={styles.detail}>
                     <View style={styles.detailLeft}>
                         <Text style={styles.detailText}>等级: 11</Text>

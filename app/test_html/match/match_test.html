@@ -14,7 +14,7 @@
 <body>
 <div class="change">
     <select>
-        <option data-wight="320px" data-height="568px">iphone5</option>
+        <option data-wight="320px" data-height="568px" selected>iphone5</option>
         <option data-wight="375px" data-height="667px">iphone6</option>
         <option data-wight="414px" data-height="736px">iphone6plus</option>
         <option data-wight="768px" data-height="1024px">iPad</option>
@@ -32,8 +32,9 @@
         $("#container").css("width",  "320px")
         $("#container").css("height",  "568px")
 
-        $(".change  option").click(function() {
-            var $this = $(this)
+        $("select").change(function() {
+            var $this = $(this).find(":selected")
+            console.log($this)
             console.log($this.attr('data-wight'))
             $("#container").css("width", $this.attr('data-wight'))
             $("#container").css('height', $this.attr('data-height'))
