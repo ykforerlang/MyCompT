@@ -71,6 +71,32 @@ class Text extends  React.Component {
 }
 window.Text = Text
 
+class TouchableHighlight extends Component {
+    render() {
+        const style = mergeStyle(this.props.style)
+        const underlayColor = this.props.underlayColor
+        const backgroundColor = style.backgroundColor || 'white'
+        return (
+            <div {...this.props} style={style} onClick={this.props.onPress} className="__TouchableHighlight" data-underlayColor={underlayColor}
+                                 data-backgroundColor = {backgroundColor}
+            ></div>
+        )
+    }
+}
+window.TouchableHighlight = TouchableHighlight
+
+class ScrollView extends Component {
+
+    render() {
+        const style = mergeStyle(this.props.style)
+        const contentStyle = mergeStyle(this.props.contentContainerStyle)
+        const contentStyleFinal = mergeStyle([contentStyle, {position:'absolute', top:100}])
+        return (
+            <div {...this.props} style={style}></div>
+        )
+    }
+}
+
 class ListView extends Component {
 
     render() {
@@ -90,6 +116,12 @@ ListView.DataSource = function DataSource(){
 }
 ListView.DataSource.prototype.cloneWithRows = (obj =>obj)
 window.ListView = ListView
+
+class Animated extends Component {
+}
+Animated.Value = Number
+Animated.View = View
+window.Animated = Animated
 
 
 

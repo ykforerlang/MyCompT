@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <script src="../lib/react.js"></script>
+    <script src="../lib/react-dom.js"></script>
+    <script src="../lib/browser.js"></script>
+    <script src="../lib/require.min.js"></script>
+    <script src="../lib/jquery-1.12.0.min.js"></script>
+    <script type="text/babel" src="../lib/native-replace.js"></script>
+    <link href="../css/common.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="container" class="iphone5">
+    <div>
+        <div style="position: absolute; width: 320px" id="__content">
+            <p style="background: grey; margin: 10px">sfdsfddddddd</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+            <p style="background: grey; margin: 10px">sfdsf</p>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        window.changePhone = function(phone) {
+            $("#container").removeAttr("class")
+            $("#container").addClass(phone)
+        }
+
+        $("#__content")
+
+        var x = 0;
+        var y = 0;
+        var down = false;
+        $("#__content").mousedown(function(e) {
+            y = e.pageY
+            x = e.pageX
+            down = true;
+        })
+        $("#__content").mouseup(function(e) {
+            down= false
+        })
+        $("#__content").mousemove(function(e) {
+            if (!down) return
+
+            var offsetX = e.pageX - x
+            var offsetY = e.pageY - y
+
+            var thiz = $(this)
+            if (offsetX > 0) {
+                thiz.css("left", offsetX)
+            }
+            if (offsetY > 20 || offsetY )
+
+            thiz.css("top", offsetY)
+        })
+    })
+</script>
+</body>
+</html>
