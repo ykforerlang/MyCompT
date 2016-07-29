@@ -30,6 +30,18 @@ class Match extends React.Component {
                         </View>
                     </View>
                 </View>
+                <View style={styles.detail}>
+                    <View style={styles.detailLeft}>
+                        <Text style={styles.detailText}>等级: 11</Text>
+                        <Text style={styles.detailText}>金钱: 1678</Text>
+                        <Text style={styles.detailText}>K/D/A: 10/22/3</Text>
+                    </View>
+                    <View style={styles.detailRight}>
+                        <Text style={styles.detailText}>正/反补: 200/20</Text>
+                        <Text style={styles.detailText}>GPM/XPM: 780/560</Text>
+                        <Text style={styles.detailText}>英雄/塔伤害: 5000/3000</Text>
+                    </View>
+                </View>
                 <View style={styles.brief}>
                     <View style={styles.player}>
                         <Image source={require("../../image/player/514364.jpg")}/>
@@ -51,6 +63,18 @@ class Match extends React.Component {
                             <Image source={require("../../image/item/5.png")}/>
                             <Image source={require("../../image/item/6.png")}/>
                         </View>
+                    </View>
+                </View>
+                <View style={styles.detail}>
+                    <View style={styles.detailLeft}>
+                        <Text style={styles.detailText}>等级: 11</Text>
+                        <Text style={styles.detailText}>金钱: 1678</Text>
+                        <Text style={styles.detailText}>K/D/A: 10/22/3</Text>
+                    </View>
+                    <View style={styles.detailRight}>
+                        <Text style={styles.detailText}>正/反补: 200/20</Text>
+                        <Text style={styles.detailText}>GPM/XPM: 780/560</Text>
+                        <Text style={styles.detailText}>英雄/塔伤害: 5000/3000</Text>
                     </View>
                 </View>
                 <View style={styles.brief}>
@@ -76,6 +100,18 @@ class Match extends React.Component {
                         </View>
                     </View>
                 </View>
+                <View style={styles.detail}>
+                    <View style={styles.detailLeft}>
+                        <Text style={styles.detailText}>等级: 11</Text>
+                        <Text style={styles.detailText}>金钱: 1678</Text>
+                        <Text style={styles.detailText}>K/D/A: 10/22/3</Text>
+                    </View>
+                    <View style={styles.detailRight}>
+                        <Text style={styles.detailText}>正/反补: 200/20</Text>
+                        <Text style={styles.detailText}>GPM/XPM: 780/560</Text>
+                        <Text style={styles.detailText}>英雄/塔伤害: 5000/3000</Text>
+                    </View>
+                </View>
                 <View style={styles.brief}>
                     <View style={styles.player}>
                         <Image source={require("../../image/player/514364.jpg")}/>
@@ -97,6 +133,18 @@ class Match extends React.Component {
                             <Image source={require("../../image/item/5.png")}/>
                             <Image source={require("../../image/item/6.png")}/>
                         </View>
+                    </View>
+                </View>
+                <View style={styles.detail}>
+                    <View style={styles.detailLeft}>
+                        <Text style={styles.detailText}>等级: 11</Text>
+                        <Text style={styles.detailText}>金钱: 1678</Text>
+                        <Text style={styles.detailText}>K/D/A: 10/22/3</Text>
+                    </View>
+                    <View style={styles.detailRight}>
+                        <Text style={styles.detailText}>正/反补: 200/20</Text>
+                        <Text style={styles.detailText}>GPM/XPM: 780/560</Text>
+                        <Text style={styles.detailText}>英雄/塔伤害: 5000/3000</Text>
                     </View>
                 </View>
                 <View style={styles.brief}>
@@ -152,7 +200,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f0f0f0',
+        backgroundColor:'#F5F5DC',
         marginTop: 10,
         paddingLeft: 20,
         paddingRight: 20,
@@ -191,9 +239,10 @@ const styles = StyleSheet.create({
     },
 
     detail: {
-        marginLeft:30,
+        paddingLeft: 20,
+        paddingRight: 20,
         flexDirection :'row',
-        backgroundColor:'#F5F5DC',
+        backgroundColor: '#f0f0f0',
         justifyContent:'flex-start'
     },
 

@@ -7,11 +7,13 @@ class MatchBrief extends Component {
     render() {
         let pr = this.props
         let heroes = pr.heroes
-        return (
+
+        let mb =  (
             <View style={styles.detail}>
                 <View style={commonStyles.flexRow}>
-                    <Text style={commonStyles.fs12Flex}>比赛ID: {pr.matchId}</Text>
-                    <Text style={commonStyles.fs12Flex}>开始时间: {pr.startTime}</Text>
+                    <Text style={commonStyles.fs12Flex}>BO5/1</Text>
+                    <Text style={commonStyles.fs12Flex2}>比赛ID: {pr.matchId}</Text>
+                    <Text style={commonStyles.fs12Flex2}>开始时间: {pr.startTime}</Text>
                 </View>
                 <View style={styles.team}>
                     <View style={commonStyles.flexRow}>
@@ -37,14 +39,18 @@ class MatchBrief extends Component {
                 </View>
             </View>
         )
+        return (
+            <View>
+                {[mb, mb, mb, null, mb]}
+            </View>
+        )
     }
 }
 
 const styles = StyleSheet.create({
     detail: {
         backgroundColor: '#f0f0f0',
-        marginLeft: 30,
-        padding: 5,
+        padding: 10,
         borderTopWidth: 1,
         borderTopColor: 'grey',
         borderTopStyle: 'solid'
@@ -58,6 +64,9 @@ const styles = StyleSheet.create({
 const commonStyles = StyleSheet.create({
     flexRow: {flexDirection: 'row'},
     fs12Flex: {fontSize: 12, flex: 1},
+    fs12Flex2: {fontSize: 12, flex: 2},
+    fs12: {fontSize:12,}
+
 })
 
 
