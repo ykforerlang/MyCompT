@@ -14,7 +14,7 @@ class Match extends React.Component {
                     </View>
                     <View style={styles.hero}>
                         <Image source={require("../../image/hero/1.png")}/>
-                        <Text  style={styles.briefText}>天穹守望者</Text>
+                        <Text  style={styles.briefText}>abcge</Text>
                     </View>
                     <View style={styles.items}>
                         <View style={styles.itemsLine}>
