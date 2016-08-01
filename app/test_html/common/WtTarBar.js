@@ -6,7 +6,7 @@ class WtTarBar extends Component {
     static propTypes = {
         ...View.protoTypes,
 
-        underlayColor : React.PropTypes.string.isRequired,
+        underlayColor: React.PropTypes.string.isRequired,
         value: React.PropTypes.string.isRequired,
         initOpacity: React.PropTypes.number,
         activeTab: React.PropTypes.number,
@@ -24,7 +24,7 @@ class WtTarBar extends Component {
 
 
         this._scrollValueRange = this._initScrollValueRange(this.itemList.length)
-        this._itemX =new Array(this.itemList.length)
+        this._itemX = new Array(this.itemList.length)
         this._itemWidth = new Array(this.itemList.length)
 
         this._TouchAnimated = Animated.createAnimatedComponent(TouchableWithoutFeedback) //TODO how?
@@ -46,7 +46,7 @@ class WtTarBar extends Component {
             underLineAniStyle: {
                 left,
                 width,
-                opacity:1,
+                opacity: 1,
             }
         })
     }
@@ -54,11 +54,11 @@ class WtTarBar extends Component {
     render() {
         const underLineStyle = {
             position: 'absolute',
-            buttom:0,
-            height:this.props.underlineHeight,
+            buttom: 0,
+            height: this.props.underlineHeight,
             backgroundColor: this.props.underlineColor,
-            opacity:0,
-            width:1,
+            opacity: 0,
+            width: 1,
         }
 
         return (
@@ -74,11 +74,11 @@ class WtTarBar extends Component {
 
     _tarBarItem(index, title) {
         const opa = this.props.scrollValue.interpolate({
-            inputRange:this._scrollValueRange,
+            inputRange: this._scrollValueRange,
             outputRange: this._getOutputRange(this.itemList.length, index, this.initOpacity),
         })
         const Comp = this._TouchAnimated
-        return  (
+        return (
             <Comp
                 style={{
                 opacity: opa
@@ -101,11 +101,12 @@ class WtTarBar extends Component {
         if (length == 3) return [0, 1, 2]
 
         const r = []
-        for (let i = 0; i< length; i++) {
+        for (let i = 0; i < length; i++) {
             r.push(i)
         }
         return r
     }
+
     _getOutputRange(length, index, initOpa) {
         if (length <= 0) {
             console.warn("tar item should >0")
@@ -113,7 +114,7 @@ class WtTarBar extends Component {
         }
 
         const r = []
-        for (let i = 0; i< length; i++) {
+        for (let i = 0; i < length; i++) {
             if (i == index) {
                 r.push(1)
             } else {
@@ -134,7 +135,7 @@ class WtTarBar extends Component {
 
 const styles = StyleSheet.create({
     tarBar: {
-        flexDirection:'row',
-        justifyContent:'space-around',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
     }
 })
