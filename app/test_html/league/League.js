@@ -68,3 +68,4 @@ ReactDOM.render(
     <League/>,
     document.getElementById('container')
 );
+

@@ -64,6 +64,8 @@ blog
     https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v1/?key={}&language=zh_cn
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/sand_king_full.png
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/antimage_hphover.png
+    http://cdn.dota2.com.cn/apps/dota2/images/heroes/antimage_selection.png
+
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_lg.png
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_sb.png
     http://cdn.dota2.com.cn/apps/dota2/images/heroes/nyx_assassin_eg.png
@@ -91,5 +93,9 @@ blog
    76561197960265728
            182331313
    76561198142597041
+
+
+   密钥: 6515B089779D631CD61B8599622FE7FC
+   域名名称: dota2video.com
 
 
